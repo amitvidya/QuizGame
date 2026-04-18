@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #dff6ff, #ffffff, #ffe6cc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+  }
+  
+  .quiz-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .quiz-card {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-header h1 {
+    font-size: 32px;
+    color: #0f4c5c;
+    margin-bottom: 6px;
+  }
+  
+  .subtitle {
+    color: #666;
+    font-size: 15px;
+  }
+  
+  .quiz-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #444;
+    font-weight: 600;
+  }
+  
+  .question-box {
+    background: #f4f9ff;
+    border: 2px solid #d6eaff;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .question-box h2 {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #1b2a41;
+  }
+  
+  .options {
+    display: grid;
+    gap: 14px;
+  }
+  
+  .option-btn {
+    padding: 14px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #e9f5db;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+  }
+  
+  .option-btn:hover {
+    background: #cfe8a9;
+    transform: translateY(-2px);
+  }
+  
+  .option-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .next-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #0f4c5c;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease;
+  }
+  
+  .next-btn:hover {
+    background: #146c7c;
+  }
+  
+  @media (max-width: 600px) {
+    .quiz-card {
+      padding: 20px;
+    }
+  
+    .quiz-header h1 {
+      font-size: 26px;
+    }
+  
+    .question-box h2 {
+      font-size: 18px;
+    }
+  
+    .option-btn,
+    .next-btn {
+      font-size: 15px;
+    }
+  }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="quizStart()">
+  <div class="quiz-container">
+    <div class="quiz-card">
+      <div class="quiz-header">
+        <h1>Math Quiz</h1>
+        <p class="subtitle">Test your skills</p>
+      </div>
+
+      <div class="quiz-info">
+        <span>Question <span id="quno"></span> / 10</span>
+        <span>Score: <span id="scor"></span></span>
+      </div>
+
+      <div class="question-box">
+        <h2 id="question"></h2>
+      </div>
+
+      <div class="options">
+        <button class="option-btn" id ="op1" onclick="scoreChecking(this)"></button>
+        <button class="option-btn"  id ="op2" onclick="scoreChecking(this)"></button>
+        <button class="option-btn"  id ="op3" onclick="scoreChecking(this)"></button>
+        <button class="option-btn"  id ="op4" onclick="scoreChecking(this)"></button>
+      </div>
+
+      <div class="quiz-footer">
+        <button class="next-btn" onclick="quizStart()">Next Question</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

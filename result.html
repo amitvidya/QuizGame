@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="result.css" />
+</head>
+<body>
+  <div class="result-container">
+    <div class="result-card">
+      <h1>Quiz Completed</h1>
+      <p class="subtitle">Here is your final score</p>
+
+      <div class="score-box">
+        <span class="score-label">Your Score</span>
+        <h2 id="finalScore">0</h2>
+      </div>
+
+      <button class="play-again" onclick="goHome()">Play Again</button>
+    </div>
+  </div>
+
+  <script>
+    let finalScore = localStorage.getItem("finalScore") || 0;
+    document.getElementById("finalScore").innerText = finalScore;
+
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
