@@ -42,7 +42,7 @@ function quizStart(){
      
      document.getElementById("question").innerText=ele.question
      let options=makeOptions(ele.answer);
-     correctVal=ele.answer;
+     correctVal=Number(ele.answer.toFixed(2));
      document.getElementById("op1").innerText=options[0];
      document.getElementById("op2").innerText=options[1];
      document.getElementById("op3").innerText=options[2];
@@ -185,8 +185,8 @@ function makeQuestion1(type) {
 
   function makeQuestion4(type) {
     let a = Math.floor(Math.random() * 10) + 2;
-    let b = Math.floor(Math.random() * 10) + 9;
-    let c = Math.floor(Math.random() * 10) + 5;
+    let b = Math.floor(Math.random() * 10) + 14;
+    let c = Math.floor(Math.random() * 10) + 3;
     if (type === 3) {
       return {
         question: `A mother is ${a} times as old as her daughter. 
