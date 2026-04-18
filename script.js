@@ -29,7 +29,10 @@ document.getElementById("scor").innerText=score;
   
 
 function quizStart(){
-    
+      if(queNo===11){
+        localStorage.setItem("finalScore", score);
+  window.location.href = "result.html";
+    }
     document.getElementById("quno").innerText=queNo;
     queNo+=1;
     let randomIndex = Math.floor(Math.random() * arr.length);
