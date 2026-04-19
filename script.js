@@ -185,8 +185,8 @@ function makeQuestion1(type) {
 
   function makeQuestion4(type) {
     let a = Math.floor(Math.random() * 10) + 2;
-    let b = Math.floor(Math.random() * 10) + 14;
     let c = Math.floor(Math.random() * 10) + 3;
+    let b = c + Math.floor(Math.random() * 10) + 9;
     if (type === 3) {
       return {
         question: `A mother is ${a} times as old as her daughter. 
