@@ -115,24 +115,21 @@ function makeQuestion1(type) {
   
     if (type === 3) {
       return {
-        question: `A person crosses a ${a} m long street in ${b} minutes.
-         What is his speed in km/hr?`,
+        question: `A person crosses a ${a} m long street in ${b} minutes. What is his speed in km/hr?`,
         answer: (a / 1000) / (b / 60)
       };
     }
   
     if (type === 2) {
       return {
-        question: `A person crosses a ${a} km long street in ${b} minutes.
-         What is his speed in km/hr?`,
+        question: `A person crosses a ${a} km long street in ${b} minutes. What is his speed in km/hr?`,
         answer: a / (b / 60)
       };
     }
   
     if (type === 1) {
       return {
-        question: `A person crosses a ${a} m long street in ${b} sec. 
-        What is his speed in m/sec?`,
+        question: `A person crosses a ${a} m long street in ${b} sec. What is his speed in m/sec?`,
         answer: a / b
       };
     }
@@ -144,8 +141,7 @@ function makeQuestion1(type) {
   
     if (type === 3) {
       return {
-        question: `A cycle was priced at ${a}, and its price increased by ${b}%.
-         Find the final price of the cycle.`,
+        question: `A cycle was priced at ${a}, and its price increased by ${b}%. Find the final price of the cycle.`,
         answer: a + (a * b) / 100
       };
     }
@@ -197,24 +193,21 @@ function makeQuestion1(type) {
     let b = c + Math.floor(Math.random() * 10) + 9;
     if (type === 3) {
       return {
-        question: `A mother is ${a} times as old as her daughter. 
-        If the daughter is ${b} years old, what is the mother's age?`,
+        question: `A mother is ${a} times as old as her daughter. If the daughter is ${b} years old, what is the mother's age?`,
         answer: (a*b)
       };
     }
   
     if (type === 2) {
       return {
-        question: `A father is ${a} times as old as his son. After ${c} years, 
-        the son will be ${b} years old. What is the father’s present age?`,
+        question: `A father is ${a} times as old as his son. After ${c} years, the son will be ${b} years old. What is the father’s present age?`,
         answer: a*(b-c)
       };
     }
   
     if (type === 1) {
       return {
-        question: `A man is ${a} times as old as his brother. If after ${c} years, the brother 
-        will be ${b} years old, what is the man’s present age?`,
+        question: `A man is ${a} times as old as his brother. If after ${c} years, the brother will be ${b} years old, what is the man’s present age?`,
         answer: a*(b-c)
       };
     }
