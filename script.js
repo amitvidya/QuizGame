@@ -3,6 +3,14 @@ let score=0;
 const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10,11];
 let queNo=1;
 let correctVal;
+
+document.getElementById("nex").addEventListener('click',{
+  handleEvent() {
+    count = Math.max(1, count - 1);
+    quizStart();
+  }
+});
+
 function scoreChecking(btn) {
     
   
@@ -102,8 +110,8 @@ function makeOptions(correctAnswer) {
  
 
 function makeQuestion1(type) {
-    let a = Math.floor(Math.random() * 10) * 200;
-    let b = Math.floor(Math.random() * 10) * 2;
+    let a = (Math.floor(Math.random() * 10) + 1) * 200;
+    let b = (Math.floor(Math.random() * 10) + 1) * 2;
   
     if (type === 3) {
       return {
@@ -131,8 +139,8 @@ function makeQuestion1(type) {
   }
 
   function makeQuestion2(type) {
-    let a = Math.floor(Math.random() * 10) * 400;
-    let b = Math.floor(Math.random() * 10) * 2;
+    let a = (Math.floor(Math.random() * 10) + 1) * 400;
+    let b = (Math.floor(Math.random() * 10) + 1) * 2;
   
     if (type === 3) {
       return {
